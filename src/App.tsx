@@ -1,7 +1,7 @@
 /**
- * Kho Công cụ AI - Cô Thu Trang
- * Website cá nhân giới thiệu các ứng dụng AI hỗ trợ giảng dạy
- * Cô Thu Trang - Trường THPT Sơn Dương
+ * Kho Công cụ AI - Cô Phạm Thị Bình & Cô Đào Phương Thảo
+ * Website giới thiệu các ứng dụng AI hỗ trợ giảng dạy
+ * Trường THCS Lý Tự Trọng, xã Vị Xuyên
  */
 
 import React, { useState } from 'react';
@@ -62,7 +62,7 @@ export default function App() {
   });
 
   return (
-    <div className="min-h-screen bg-[#faf5ff]">
+    <div className="min-h-screen bg-[#f0fdfa]">
       {/* ===== HEADER ===== */}
       <header className="gradient-header text-white sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,7 +73,7 @@ export default function App() {
               </div>
               <div>
                 <h1 className="font-bold text-lg leading-tight tracking-tight">KHO CÔNG CỤ AI</h1>
-                <p className="text-white/80 text-[11px] font-medium">Cô Thu Trang — Trường THPT Sơn Dương</p>
+                <p className="text-white/80 text-[11px] font-medium">Trường THCS Lý Tự Trọng — Xã Vị Xuyên</p>
               </div>
             </div>
             <div className="hidden md:flex items-center gap-2 bg-white/15 backdrop-blur-md rounded-full px-4 py-2 border border-white/10">
@@ -88,9 +88,9 @@ export default function App() {
       <section className="gradient-hero text-white relative overflow-hidden">
         {/* Decorative blobs */}
         <div className="absolute inset-0">
-          <div className="absolute top-10 left-10 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl"></div>
-          <div className="absolute top-40 right-20 w-60 h-60 bg-pink-500/15 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-1/3 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-10 left-10 w-80 h-80 bg-teal-400/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-40 right-20 w-60 h-60 bg-cyan-400/15 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-1/3 w-96 h-96 bg-emerald-400/10 rounded-full blur-3xl"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
@@ -102,11 +102,11 @@ export default function App() {
             >
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-1.5 mb-6 border border-white/15">
                 <Star size={14} className="text-amber-300 fill-amber-300" />
-                <span className="text-sm font-medium text-white/90">Cô Thu Trang — Trường THPT Sơn Dương</span>
+                <span className="text-sm font-medium text-white/90">Cô Phạm Thị Bình & Cô Đào Phương Thảo — THCS Lý Tự Trọng</span>
               </div>
               <h2 className="text-3xl md:text-5xl font-extrabold mb-5 leading-tight">
                 Kho Công cụ{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-purple-300 to-cyan-300 animate-gradient">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-300 to-cyan-300 animate-gradient">
                   AI Thông minh
                 </span>
                 <br />
@@ -115,7 +115,7 @@ export default function App() {
                 </span>
               </h2>
               <p className="text-white/60 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
-                Tổng hợp các ứng dụng AI thông minh, hỗ trợ giáo viên trong việc giảng dạy Ngữ văn, Tin học và mang lại trải nghiệm học tập thú vị cho học sinh.
+                Tổng hợp các ứng dụng AI thông minh do cô Phạm Thị Bình (Tin học) và cô Đào Phương Thảo (Ngữ văn) phát triển, mang lại trải nghiệm học tập thú vị cho học sinh.
               </p>
               <div className="flex flex-wrap gap-3 text-sm">
                 <motion.div 
@@ -155,13 +155,13 @@ export default function App() {
         >
           {/* Search */}
           <div className="flex-1 relative">
-            <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
+            <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-teal-400" />
             <input 
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Tìm kiếm công cụ..."
-              className="w-full bg-purple-50/50 border border-purple-200/50 rounded-xl pl-11 pr-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-400/30 focus:border-purple-400/50 transition-all text-sm placeholder:text-slate-400"
+              className="w-full bg-teal-50/50 border border-teal-200/50 rounded-xl pl-11 pr-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-400/30 focus:border-teal-400/50 transition-all text-sm placeholder:text-slate-400"
             />
           </div>
           {/* Category Filter */}
@@ -173,8 +173,8 @@ export default function App() {
                 className={cn(
                   "px-4 py-2 rounded-xl text-sm font-semibold transition-all whitespace-nowrap",
                   selectedCategory === cat
-                    ? "bg-gradient-to-r from-primary to-purple-600 text-white shadow-md shadow-purple-300/30"
-                    : "bg-purple-50 text-slate-600 hover:bg-purple-100 hover:text-purple-700"
+                    ? "bg-gradient-to-r from-primary to-cyan-600 text-white shadow-md shadow-teal-300/30"
+                    : "bg-teal-50 text-slate-600 hover:bg-teal-100 hover:text-teal-700"
                 )}
               >
                 {cat}
@@ -189,11 +189,11 @@ export default function App() {
         <div className="flex items-center justify-between mb-8">
           <div>
             <h3 className="text-2xl font-bold text-slate-800">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">Công cụ AI</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-cyan-600">Công cụ AI</span>
             </h3>
             <p className="text-slate-500 text-sm mt-1">Chọn công cụ để bắt đầu sử dụng</p>
           </div>
-          <span className="text-sm bg-purple-100 text-purple-600 font-bold px-3 py-1 rounded-full">{filteredTools.length} công cụ</span>
+          <span className="text-sm bg-teal-100 text-teal-700 font-bold px-3 py-1 rounded-full">{filteredTools.length} công cụ</span>
         </div>
 
         {filteredTools.length > 0 ? (
@@ -228,15 +228,15 @@ export default function App() {
                 {/* Card Body */}
                 <div className="p-6 space-y-3">
                   <div>
-                    <span className="text-[11px] font-bold text-purple-500 uppercase tracking-wider">{tool.category}</span>
-                    <h4 className="text-lg font-bold text-slate-800 mt-1 leading-snug group-hover:text-purple-600 transition-colors line-clamp-2">
+                    <span className="text-[11px] font-bold text-teal-600 uppercase tracking-wider">{tool.category}</span>
+                    <h4 className="text-lg font-bold text-slate-800 mt-1 leading-snug group-hover:text-teal-600 transition-colors line-clamp-2">
                       {tool.name}
                     </h4>
                   </div>
                   <p className="text-slate-500 text-sm leading-relaxed line-clamp-3">
                     {tool.description}
                   </p>
-                  <div className="tool-card-btn flex items-center justify-center gap-2 bg-purple-50 text-purple-600 py-3 rounded-xl font-bold text-sm transition-all">
+                  <div className="tool-card-btn flex items-center justify-center gap-2 bg-teal-50 text-teal-700 py-3 rounded-xl font-bold text-sm transition-all">
                     <span>Truy cập ngay</span>
                     <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -246,11 +246,11 @@ export default function App() {
           </div>
         ) : (
           <div className="text-center py-20">
-            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Search size={28} className="text-purple-400" />
+            <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Search size={28} className="text-teal-400" />
             </div>
             <p className="text-slate-500 font-medium">Không tìm thấy công cụ nào phù hợp</p>
-            <button onClick={() => { setSearchQuery(''); setSelectedCategory('Tất cả'); }} className="text-purple-600 font-semibold text-sm mt-2 hover:underline">
+            <button onClick={() => { setSearchQuery(''); setSelectedCategory('Tất cả'); }} className="text-teal-600 font-semibold text-sm mt-2 hover:underline">
               Xóa bộ lọc
             </button>
           </div>
@@ -260,43 +260,43 @@ export default function App() {
       {/* ===== COMING SOON ===== */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         <motion.div 
-          className="bg-gradient-to-r from-purple-50 via-pink-50 to-indigo-50 rounded-3xl p-8 md:p-12 border border-purple-200/40 text-center relative overflow-hidden"
+          className="bg-gradient-to-r from-teal-50 via-cyan-50 to-emerald-50 rounded-3xl p-8 md:p-12 border border-teal-200/40 text-center relative overflow-hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          <div className="absolute top-0 right-0 w-40 h-40 bg-purple-200/30 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-32 h-32 bg-pink-200/30 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-0 w-40 h-40 bg-teal-200/30 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-32 h-32 bg-cyan-200/30 rounded-full blur-3xl"></div>
           <div className="relative z-10">
             <div className="animate-float inline-block mb-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg shadow-purple-300/30">
+              <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg shadow-teal-300/30">
                 <Sparkles size={32} className="text-white" />
               </div>
             </div>
             <h3 className="text-2xl font-bold text-slate-800 mb-2">Sắp có thêm công cụ mới! 🚀</h3>
             <p className="text-slate-500 max-w-lg mx-auto">
-              Cô Thu Trang đang phát triển thêm nhiều công cụ AI thú vị khác. Hãy quay lại thường xuyên để khám phá nhé!
+              Cô Bình và cô Thảo đang phát triển thêm nhiều công cụ AI thú vị khác. Hãy quay lại thường xuyên để khám phá nhé!
             </p>
           </div>
         </motion.div>
       </section>
 
       {/* ===== FOOTER ===== */}
-      <footer className="bg-white/80 backdrop-blur-md border-t border-purple-100">
+      <footer className="bg-white/80 backdrop-blur-md border-t border-teal-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 via-pink-500 to-indigo-500 rounded-xl flex items-center justify-center shadow-md">
+              <div className="w-10 h-10 bg-gradient-to-br from-teal-500 via-cyan-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-md">
                 <Rocket size={20} className="text-white" />
               </div>
               <div>
                 <p className="font-bold text-slate-800">Kho Công cụ AI</p>
-                <p className="text-xs text-slate-500">Cô Thu Trang — Trường THPT Sơn Dương</p>
+                <p className="text-xs text-slate-500">Cô Phạm Thị Bình & Cô Đào Phương Thảo — THCS Lý Tự Trọng, Vị Xuyên</p>
               </div>
             </div>
             <div className="flex items-center gap-1.5 text-sm text-slate-500">
               <span>Được tạo với</span>
-              <Heart size={14} className="text-pink-500 fill-pink-500" />
+              <Heart size={14} className="text-teal-500 fill-teal-500" />
               <span>cho giáo dục Việt Nam</span>
             </div>
           </div>
